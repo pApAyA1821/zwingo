@@ -1,0 +1,60 @@
+.bg-img {
+  background-image: url("../Assets/hero.jpeg");
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  width: auto;
+  height: 1024px;
+}
+
+.hero-left {
+  position: absolute;
+  top: 200px;
+  height: 80%;
+  width: 55%;
+  padding: 20px;
+}
+
+.disp-imgs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: fit-content;
+  width: fit-content;
+  overflow: hidden;
+  justify-content: space-around;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.disp-imgs img {
+  width: 45%;
+  padding: 8px;
+  border-radius: 50px;
+}
+
+.wlcm-txt {
+  margin: 30px;
+}
+
+.wlcm-txt p {
+  margin: 0;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: 700;
+  font-family: jua;
+}
+
+.hero-right {
+  position: absolute;
+  top: 200px;
+  right: 0;
+  height: 80%;
+  width: 45%;
+  padding: 20px;
+}
