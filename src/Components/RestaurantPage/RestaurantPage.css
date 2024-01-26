@@ -1,0 +1,110 @@
+.main-div {
+  background-image: url("https://t3.ftcdn.net/jpg/02/05/87/60/240_F_205876015_hYYs7ugqoU8QAobSS3TbnGQ92qyS5gEc.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top {
+  display: flex;
+  height: 225.6px;
+  width: 100%;
+  background-color: #e6e6e6;
+}
+
+.food-list {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.food {
+  display: flex;
+  width: 46.5%;
+  display: flex;
+  margin: 1.6%;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  background: linear-gradient(
+    153deg,
+    rgba(206, 152, 152, 1) 0%,
+    rgba(167, 135, 156, 1) 67%,
+    rgba(87, 112, 169, 1) 100%
+  );
+}
+
+img {
+  display: flex;
+  width: 250px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 20px;
+}
+.food-text {
+  width: 100%;
+}
+
+.food-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 0 0 10px 10px;
+  margin: 10px 0 0 0;
+}
+
+.food-rating-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+/* CSS */
+.btn {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #f3d351;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #dbc2b1;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  background-color: #d09f7e;
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  transform: translateY(0);
+}

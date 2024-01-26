@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import "./Hero.css";
 import scootyman from "../Assets/scooty_man.png";
 import food_img1 from "../Assets/food-img1.jpg";
@@ -17,10 +17,10 @@ const Hero = () => {
           <p> it's an experience </p>
         </div>
         <div className="disp-imgs">
-          <img src={food_img1} />
-          <img src={food_img2} />
-          <img src={food_img3} />
-          <img src={food_img4} />
+          <img src={food_img1} alt="" />
+          <img src={food_img2} alt="" />
+          <img src={food_img3} alt="" />
+          <img src={food_img4} alt="" />
         </div>
       </div>
       <div className="hero-right">
@@ -28,10 +28,6 @@ const Hero = () => {
       </div>
     </div>
   );
-};
-
-Hero.propTypes = {
-  // Define your prop types here
 };
 
 export default Hero;

@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { collection, getDocs } from "firebase/firestore";
 import "./Navbar.css";
 import cart_icon from "../Assets/cart_icon.png";
 import { Link } from "react-router-dom";
+import { db } from "../../firebase/firebase";
 
 const Navbar = () => {
-  const [menu, setMenu] = React.useState("Home");
+  const [menu, setMenu] = useState("Home");
+  const [cartItems, setCartItems] = useState([]);
+
+  useEffect(() => {
+    const fetchCartItems = async () => {
+      const cartRef = collection(db, "cart");
+      const cartSnapshot = await getDocs(cartRef);
+      setCartItems(cartSnapshot.docs.map((doc) => doc.data()));
+    };
+
+    fetchCartItems();
+  }, []);
 
   return (
     <div className="navbar">
@@ -42,7 +55,7 @@ const Navbar = () => {
         <Link to="/cart">
           <img src={cart_icon} alt="cart-icon" />
         </Link>
-        <div className="cart-count">0</div>
+        <span className="cart-count">{cartItems.length}</span>
       </div>
     </div>
   );
