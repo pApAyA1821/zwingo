@@ -66,6 +66,7 @@ const addToCart = async (food) => {
     await addDoc(cartRef, {
       name: food.dsc,
       price: food.price,
+      quantity: 1,
     });
     console.log("Food item added to cart!");
   } catch (e) {
