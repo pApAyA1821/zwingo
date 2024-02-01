@@ -42,12 +42,10 @@ const Restaurant = () => {
       <div className="food-list">
         {foods.map((food) => (
           <div key={food.id} className="food">
-            <div className="food-text">
-              <p className="food-name">{food.dsc}</p>
-              <div className="food-rating-price">
-                <p>Rating: {food.rate}</p>
-                <p>Price: {food.price}</p>
-              </div>
+            <div className="food-name">{food.dsc}</div>
+            <div className="food-rating-price">
+              <p>Rating: {food.rate}</p>
+              <p>Price: {food.price}</p>
               <button className="btn" onClick={() => addToCart(food)}>
                 Add to Cart
               </button>
